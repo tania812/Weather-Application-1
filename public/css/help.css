@@ -1,0 +1,48 @@
+.help-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.help-container h2 {
+    margin-top: 0;
+    color: #1e90ff;
+}
+
+.help-text {
+    margin-bottom: 1.5rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.contact-info strong {
+    color: #1e90ff;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+    .help-container {
+        padding: 1.5rem;
+    }
+}
+
+footer {
+    text-align: center;
+}

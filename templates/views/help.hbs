@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Help</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/help.css">
+</head>
+
+<body>
+    <div class="main-content help-page">
+        {{>header}}
+
+        <section class="help-container">
+            <h2>Need Help?</h2>
+            <p class="help-text">{{Helptext}}</p>
+            <div class="contact-info">
+                <p><strong>Contact:</strong> {{contact}}</p>
+                <p><strong>Email:</strong> {{email}}</p>
+            </div>
+        </section>
+
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>

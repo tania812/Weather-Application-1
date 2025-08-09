@@ -1,0 +1,84 @@
+        body {
+            padding: 0;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: url('/img/sunshine.jpeg') no-repeat center center / cover;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .main-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .weather-box {
+            background: rgba(255, 255, 255, 0.9);
+            /* more see-through */
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .weather-box h2 {
+            font-size: 1.8rem;
+            background: linear-gradient(to right, #1e90ff, #00bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .weather-box .subtitle {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .weather-box form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .weather-box input {
+            width: 80%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .weather-box button {
+            width: 50%;
+            padding: 0.7rem;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        .weather-box button:hover {
+            background-color: #0077cc;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1rem;
+            color: #00A3FF;
+            font-weight: bold;
+        }
