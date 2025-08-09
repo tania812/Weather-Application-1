@@ -36,9 +36,6 @@
     margin-bottom: 1rem;
 }
 
-
-/* Make it responsive */
-
 @media (max-width: 600px) {
     .about-container {
         flex-direction: column;
