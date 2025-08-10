@@ -1,4 +1,5 @@
 const request = require('request');
+const { round } = Math;
 
 
 const weatherCodes = {
@@ -43,10 +44,13 @@ const forecast = (latitude, longitude, callback) => {
             callback('Unable to find location', undefined);
         } else {
             const { temperature, windspeed, weathercode, is_day } = body.current_weather;
+            const roundedTemp = round(temperature);
+            const roundedWind = round(windspeed);
+
             const weatherInfo = weatherCodes[weathercode] || { day: "🌈 Unknown", night: "🌈 Unknown" };
             const desc = is_day ? weatherInfo.day : weatherInfo.night;
 
-            callback(undefined, `${desc}. It is currently ${temperature}°C with wind speed of ${windspeed} km/h.`);
+            callback(undefined, `${desc}. It is currently ${roundedTemp}°C with wind speed of ${roundedWind} km/h.`);
         }
     });
 };
